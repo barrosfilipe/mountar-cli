@@ -1,9 +1,19 @@
 {
   "name": "mountar-cli",
   "description": "SSHFS Mount Made Easy",
-  "version": "0.0.2",
+  "keywords": [
+    "ssh",
+    "javascript",
+    "mount",
+    "sshfs",
+    "osx",
+    "osxfuse",
+    "fuse"
+  ],
+  "version": "0.0.4",
   "main": "index.js",
   "author": "barrosfilipe",
+  "homepage": "https://github.com/barrosfilipe/mountar-cli",
   "license": "MIT",
   "scripts": {
     "postinstall": "node ./install.js"
