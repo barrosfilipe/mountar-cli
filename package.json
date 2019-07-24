@@ -1,0 +1,20 @@
+{
+  "name": "mountar-cli",
+  "description": "SSHFS Mount Made Easy",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "barrosfilipe",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "node ./install.js"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.3",
+    "shout-error": "^0.0.2",
+    "shout-message": "^0.0.2",
+    "shout-success": "^0.0.2"
+  },
+  "bin": {
+    "mountar": "./src/index.js"
+  }
+}
