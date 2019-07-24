@@ -1,6 +1,6 @@
 {
   "name": "mountar-cli",
-  "description": "SSHFS Mount Made Easy",
+  "description": "Mount your remote SSH servers as folders pretty easy!",
   "keywords": [
     "ssh",
     "javascript",
@@ -10,7 +10,7 @@
     "osxfuse",
     "fuse"
   ],
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "index.js",
   "author": "barrosfilipe",
   "homepage": "https://github.com/barrosfilipe/mountar-cli",
