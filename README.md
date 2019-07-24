@@ -9,7 +9,7 @@
 ## Install
 
 ```
-npm i -g barrosfilipe/mountar-cli
+npm i -g mountar-cli
 ```
 
 ## Usage
