@@ -1,7 +1,7 @@
 {
   "name": "mountar-cli",
   "description": "SSHFS Mount Made Easy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "author": "barrosfilipe",
   "license": "MIT",
