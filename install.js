@@ -48,10 +48,12 @@ async function installFUSE() {
 /* Check for SSHFS installation */
 async function installSSHFS() {
   return new Promise((resolve, reject) => {
-    if (shell.exec("brew install sshfs").code !== 0) {
-      shoutError("SSHFS for macOS installation failed!");
-      process.exit(1);
-      reject();
+    if (!shell.which("sshfs")) {
+      if (shell.exec("brew install sshfs").code !== 0) {
+        shoutError("SSHFS for macOS installation failed!");
+        process.exit(1);
+        reject();
+      }
     } else {
       shoutSuccess("SSHFS for macOS installed!");
       resolve();
