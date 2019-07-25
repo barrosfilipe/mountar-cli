@@ -10,7 +10,7 @@
     "osxfuse",
     "fuse"
   ],
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "bin/mountar.js",
   "author": "barrosfilipe",
   "homepage": "https://github.com/barrosfilipe/mountar-cli",

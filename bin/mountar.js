@@ -31,7 +31,7 @@ if (!shell.test("-d", `${homeDir}/${host}`)) {
 if (
   shell.exec(
     `sshfs ${user}@${host}:${dir} -p ${port} ${homeDir}/${host} -ovolname=${host} 2> /dev/null`
-  ) !== 0
+  ).code !== 0
 ) {
   shoutError("Connection failed!");
   shoutMessage("Usage: mountar <user> <host> <dir> <port (Default: 22)>");
