@@ -10,8 +10,8 @@
     "osxfuse",
     "fuse"
   ],
-  "version": "0.0.6",
-  "main": "index.js",
+  "version": "0.0.8",
+  "main": "bin/mountar.js",
   "author": "barrosfilipe",
   "homepage": "https://github.com/barrosfilipe/mountar-cli",
   "license": "MIT",
@@ -19,12 +19,14 @@
     "postinstall": "node ./install.js"
   },
   "dependencies": {
+    "commander": "^2.20.0",
     "shelljs": "^0.8.3",
     "shout-error": "^0.0.2",
     "shout-message": "^0.0.2",
-    "shout-success": "^0.0.2"
+    "shout-success": "^0.0.2",
+    "yargs": "^13.3.0"
   },
   "bin": {
-    "mountar": "./src/index.js"
+    "mountar": "./bin/index.js"
   }
 }

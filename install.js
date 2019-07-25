@@ -5,7 +5,7 @@ const shoutError = require("shout-error");
 
 /* Check for operating system support */
 if (process.platform !== "darwin") {
-  shoutError("Moutar is only supporting macOS systems");
+  shoutError("Mountar is only supporting macOS systems");
   process.exit(1);
 }
 
@@ -61,7 +61,7 @@ async function installSSHFS() {
   });
 }
 
-/* Run */
+/* Start Installation */
 (async () => {
   await checkForBrewInstallation();
   await installFUSE();
