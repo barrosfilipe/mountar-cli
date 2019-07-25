@@ -27,6 +27,6 @@
     "yargs": "^13.3.0"
   },
   "bin": {
-    "mountar": "./bin/index.js"
+    "mountar": "./bin/mountar.js"
   }
 }
