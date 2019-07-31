@@ -28,9 +28,15 @@ if (!shell.test("-d", `${homeDir}/${host}`)) {
 }
 
 /* Check if SSHFS mounted successfully */
+function appleVolName() {
+  if (process.platform === "darwin") {
+    return `-ovolname=${host}`;
+  }
+}
+
 if (
   shell.exec(
-    `sshfs ${user}@${host}:${dir} -p ${port} ${homeDir}/${host} -ovolname=${host} 2> /dev/null`
+    `sshfs ${user}@${host}:${dir} -p ${port} ${homeDir}/${host} ${appleVolName()} 2> /dev/null`
   ).code !== 0
 ) {
   shoutError("Connection failed!");

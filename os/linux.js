@@ -7,7 +7,8 @@ const shoutError = require("shout-error");
 async function checkForLinuxDistro() {
   return new Promise(resolve => {
     const packageControl = shell.exec(
-      `[ ! -f /etc/redhat-release ] || echo -e "yum" && [ ! -f /etc/lsb-release ] || echo -e "apt-get"`
+      `[ ! -f /etc/redhat-release ] || echo -e "yum" && [ ! -f /etc/lsb-release ] || echo -e "apt-get"`,
+      { silent: true }
     );
 
     if (!packageControl.match(/yum|apt-get/g)) {

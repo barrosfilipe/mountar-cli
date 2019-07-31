@@ -1,4 +1,7 @@
 const shoutError = require("shout-error");
 
-shoutError("Mountar is not supporting Windows just yet!");
-process.exit(1);
+function windowsInstall() {
+  shoutError("Mountar is not supporting Windows just yet!");
+  process.exit(1);
+}
+module.exports = windowsInstall;
