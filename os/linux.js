@@ -16,7 +16,7 @@ async function checkForLinuxDistro() {
       process.exit(1);
     }
 
-    resolve(packageControl);
+    resolve(packageControl.stdout.replace("-e ", "").trim());
   });
 }
 
