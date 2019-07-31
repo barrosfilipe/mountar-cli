@@ -24,7 +24,7 @@ async function checkForLinuxDistro() {
 async function installSSHFS(packageControl) {
   return new Promise(resolve => {
     if (!shell.which("sshfs")) {
-      if (shell.exec(`sudo ${packageControl} install sshfs -y`).code !== 0) {
+      if (shell.exec(`sudo ${packageControl} -y install sshfs`).code !== 0) {
         shoutError("SSHFS for Linux installation failed!");
         process.exit(1);
       } else {
