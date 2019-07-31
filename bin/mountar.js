@@ -46,5 +46,7 @@ if (
   process.exit(1);
 } else {
   shoutSuccess(`Mounted on ${homeDir}/${host}`);
-  shell.exec(`open ${homeDir}/${host}`);
+  if (process.platform === "darwin") {
+    shell.exec(`open ${homeDir}/${host}`);
+  }
 }
