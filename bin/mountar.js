@@ -31,6 +31,8 @@ if (!shell.test("-d", `${homeDir}/${host}`)) {
 function appleVolName() {
   if (process.platform === "darwin") {
     return `-ovolname=${host}`;
+  } else {
+    return "";
   }
 }
 
