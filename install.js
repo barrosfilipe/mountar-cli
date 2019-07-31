@@ -2,7 +2,7 @@ const macInstall = require("./os/mac");
 const linuxInstall = require("./os/linux");
 const windowsInstall = require("./os/windows");
 
-function checkSForSystemSupport() {
+function checkForSystemSupport() {
   switch (process.platform) {
     case "darwin":
       macInstall();
@@ -16,4 +16,4 @@ function checkSForSystemSupport() {
   }
 }
 
-checkSForSystemSupport();
+checkForSystemSupport();
