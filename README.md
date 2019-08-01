@@ -24,7 +24,7 @@ Mounted remote directory will automatically pop-up on screen.
 
 ## Note
 
-Currenly we're supporting only `macOS` systems. `Windows` and `Linux` will be added soon as possible.
+Currenly we're supporting `macOS` & `Linux (in BETA)` systems. `Windows` will be added soon as possible.
 
 It's a work in progress.
 
