@@ -27,7 +27,7 @@ async function checkForBrewInstallation() {
 /* Check for Mac FUSE installation */
 async function installFUSE() {
   return new Promise(resolve => {
-    if (shell.exec("brew cask install osxfuse").code !== 0) {
+    if (shell.exec("brew install --cask osxfuse").code !== 0) {
       shoutError("FUSE for macOS installation failed!");
       process.exit(1);
     } else {
